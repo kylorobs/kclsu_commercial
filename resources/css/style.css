@@ -1,0 +1,88 @@
+body {
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.nav li {
+  opacity: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/*
+THE JUMBOTRON FULL PAGE IMAGE
+*/
+
+.jumbotron {
+  background-image: url('../images/bar.jpeg');
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+
+.jumbo-top {
+  height: 65vh;
+}
+
+.hours-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hours-circle {
+  width: 25em;
+  height: 25em;
+  background-color: white;
+  border-radius: 50em;
+  border: 10px double #61beb1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8em;
+}
+
+
+.jumbo-block {
+  background-color: white;
+  color: black;
+  height: 6em;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.jumbo-block p {
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0;
+}
+
+#Guys-location {
+  background-color: black;
+  color: white;
+}
+
+.filler {
+  height: 100em;
+}
