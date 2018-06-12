@@ -13,6 +13,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+    z-index:1000;
 }
 
 
@@ -34,7 +35,7 @@ THE JUMBOTRON FULL PAGE IMAGE
 
 
 .jumbo-top {
-  height: 75vh;
+  height: 79vh;
 }
 
 .hours-container {
@@ -56,6 +57,21 @@ THE JUMBOTRON FULL PAGE IMAGE
   align-items: center;
   justify-content: center;
   margin-right: 8em;
+}
+
+.hours-circle h1 {
+  font-size: 36px;
+}
+
+.hours-circle h3 {
+  margin-top: 0;
+}
+
+.hours-circle p {
+  margin: 0;
+  font-size: 1em;
+  padding: 0.2;
+  text-align: left;
 }
 
 
@@ -99,9 +115,22 @@ THE JUMBOTRON FULL PAGE IMAGE
   color: white;
   background-color:purple;
   padding: 0.8em;
-  margin: 2em 0em 1em 0;;
+  margin: 2em 0em 1em 0;
 }
 
 .side-menu {
   font-size: 1.3em;
+}
+
+
+@media only screen and (max-width: 480px){
+  .hours-circle {
+    width: 23em;
+    height:23em;
+    margin: 0;
+  }
+
+  .hours-container {
+    justify-content: center;
+  }
 }

@@ -18,6 +18,20 @@ function stickNav() {
   }
 }
 
+const currentDate = new Date();
+const currentDay = currentDate.getDay();
+
+if (currentDay === 2) {
+ document.getElementById('tues').style.color = 'purple';
+ document.getElementById('tues').style.fontWeight = 'bold';
+}
+
+else if (currentDay === 3) {
+ document.getElementById('weds').style.color = 'purple';
+ document.getElementById('weds').style.fontWeight = 'bold';
+}
+
+
 /*
 function fadeNav(){
   if (navbar.hasClass(".sticky"){
