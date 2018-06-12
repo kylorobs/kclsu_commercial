@@ -21,10 +21,11 @@ THE JUMBOTRON FULL PAGE IMAGE
 */
 
 .jumbotron {
-  background-image: url('../images/bar.jpeg');
+  background-image: url('../images/waterfront.jpg');
   background-size: cover;
   background-position: bottom;
   height: 100vh;
+  margin-bottom: 4em;
 }
 
 .container-fluid {
@@ -85,4 +86,22 @@ THE JUMBOTRON FULL PAGE IMAGE
 
 .filler {
   height: 100em;
+}
+
+.socials img {
+  width: 4em;
+  height: auto;
+  margin-left: 1em;
+}
+
+
+.side-menu {
+  color: white;
+  background-color:purple;
+  padding: 0.8em;
+  margin: 2em 0em 1em 0;;
+}
+
+.side-menu {
+  font-size: 1.3em;
 }
