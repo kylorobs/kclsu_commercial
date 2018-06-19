@@ -122,6 +122,66 @@ THE JUMBOTRON FULL PAGE IMAGE
   font-size: 1.3em;
 }
 
+.container-center {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #61beb1;
+  border: 1px solid white;
+}
+
+.btn-primary:hover {
+  background-color: #61beb1;
+}
+
+
+.commercial-lead {
+  font-size: 16px;
+}
+
+ul#slider, ul#slider li {
+    width: 300px;
+    height: 200px;
+    list-style: none;
+}
+
+/* SLIDER CSS */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  overflow: hidden;
+  }
+
 
 @media only screen and (max-width: 480px){
   .hours-circle {
