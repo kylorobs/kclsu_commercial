@@ -23,6 +23,28 @@ body {
     z-index:1000;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+a.dc-button {
+  display: block;
+  padding: 0.9em;
+  font-size: 1.3em;
+  text-align: center;
+  background-color: rgb(242, 191, 107);
+  color: white;
+  text-decoration: none;
+  margin: 1em;
+}
+
+a.dc-button:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+  cursor: pointer;
+}
+
 /*FULL PAGE IMAGE
 */
 
@@ -116,14 +138,6 @@ body {
   justify-content: center;
 }
 
-.btn-primary {
-  background-color: #61beb1;
-  border: 1px solid white;
-}
-
-.btn-primary:hover {
-  background-color: #61beb1;
-}
 
 
 .commercial-lead {
@@ -139,7 +153,7 @@ body {
   overflow: hidden;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin-bottom: 2em;
   }
 
 .rslides li {
@@ -287,10 +301,6 @@ body {
     }
 
 
-.rslides {
-margin: 1em 0;
-}
-
 
 
 .event-scroll, .venue-gallery {
@@ -299,39 +309,170 @@ margin-top: 1em;
 }
 
 .event-scroll {
-  background-color: teal;
+  background-color: white;
   margin-right: 1em;
+  border: 10px solid rgb(242, 191, 107);
 }
 
 .venue-gallery {
-  background-image: url(../images/bar.jpeg);
+  background-image: url(../images/coffee.jpeg);
   background-size: cover;
   max-width: 65%;
 }
 
-@media only screen and (max-width: 480px){
-    .shack-logo img {
-    width: 18em;
+
+/* BUTTON DROP-DOWNS */
+
+
+.venue-dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 6em;
+  margin: 1em 0;
+  background-color: #eee;
+}
+
+
+.main-title {
+  width: 7em;
+  text-align: center;
+  font-size: 1.8em;
+  color: white;
+  background-color: rgb(242, 191, 107);
+  padding: 0 0.6em;
+  height: 100%;
+}
+
+.main-title:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+
+
+
+
+.content-strip {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 1em 0;
+  background-color: #eee;
+
+}
+
+
+
+.content-image, .content-description {
+  min-width: 45%;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  min-height: 13em;
+}
+
+.content-image {
+  height: auto;
+  margin: 15px;
+  min-width: 45%;
+  background-color: teal;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.content-image img {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+#coffee-image {
+  background-image: url('https://www.kclsu.org/pageassets/testshed/coffee/coffeecroissant.jpg');
+}
+
+#baguette-image {
+  background-image: url('https://www.kclsu.org/pageassets/testshed/food/baguette_foodweb.jpg');
+}
+
+#wrap-image {
+  background-image: url('https://www.kclsu.org/pageassets/testshed/food/baguettes/puresimple_web(1).jpg');
+}
+
+#panini-image {
+  background-image: url('https://www.kclsu.org/pageassets/testshed/food/baguettes/panini_foodweb.jpg');
+}
+
+#salad-image {
+  background-image: url('https://www.kclsu.org/pageassets/testshed/food/salad_foodweb.jpg');
+}
+
+
+.content-description {
+ background-color: white;
+ border: 15px solid #eee;
+}
+
+.content-description h3 {
+  text-align: center;
+}
+
+
+
+.content-description p {
+  padding: 1.2em;
+  margin: 0;
+}
+
+
+
+
+/*MEDIA QUERIES */
+
+@media only screen and (max-width: 780px ){
+  .content-strip {
+    flex-direction: column;
+
   }
 
-  .colour-top, .colour-bottom{
-    height: 7em;
-  }
-  .social-strip {
-  font-size: 3em;
+}
+
+@media only screen and (max-width: 550px ){
+  .venue {
+    flex-direction: column;
+
   }
 
-  #countDownVault {
-    margin: 0;
-    display: inline-block;
-    font-size: 0.5em;
+  .content-image {
+    height: 12em;
+  }
+
+  .main-title {
+    font-size: 1.5em;
+    width: 9em;
   }
 
 }
 
 
 
+
 @media only screen and (max-width: 480px){
+  .shack-logo img {
+  width: 18em;
+}
+
+.colour-top, .colour-bottom{
+  height: 7em;
+}
+.social-strip {
+font-size: 3em;
+}
+
   .hours-circle {
     width: 23em;
     height:23em;

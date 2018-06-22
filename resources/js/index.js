@@ -1,4 +1,18 @@
+
+$(document).ready(function() {
+$('.venue-content').hide();
+$('#shack-coffee').on('click', function(){
+  $('#coffee-description').slideToggle("slow");
+
+});
+
+  $('#shack-food').on('click', function(){
+  $('#food-description').slideToggle("slow");
+
+});
+
 // When the user scrolls the page, execute myFunction
+
 window.onscroll = function() {
   stickNav()
 };
@@ -16,7 +30,7 @@ function stickNav() {
   } else {
     navbar.classList.remove("sticky");
   }
-}
+};
 
 const currentDate = new Date();
 const currentDay = currentDate.getDay();
@@ -29,7 +43,9 @@ if (currentDay === 2) {
 else if (currentDay === 3) {
  document.getElementById('weds').style.color = 'purple';
  document.getElementById('weds').style.fontWeight = 'bold';
-}
+};
+
+});
 
 
 /*
