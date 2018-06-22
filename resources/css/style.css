@@ -1,3 +1,10 @@
+/* UNIVERSAL IMAGES */
+.flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-size: 14px;
   font-family: "Open Sans", Arial, sans-serif;
@@ -16,12 +23,10 @@ body {
     z-index:1000;
 }
 
-
-/*
-THE JUMBOTRON FULL PAGE IMAGE
+/*FULL PAGE IMAGE
 */
 
-.jumbotron {
+.commercials-background {
   background-image: url('../images/waterfront.jpg');
   background-size: cover;
   background-position: bottom;
@@ -29,9 +34,15 @@ THE JUMBOTRON FULL PAGE IMAGE
   margin-bottom: 4em;
 }
 
+.venue-info-area {
+  height: 100vh;
+  background-color: white;
+}
+
 .container-fluid {
   padding: 0;
 }
+
 
 
 .jumbo-top {
@@ -47,15 +58,12 @@ THE JUMBOTRON FULL PAGE IMAGE
 }
 
 .hours-circle {
-  width: 25em;
-  height: 25em;
+  width: 30em;
+  height: 30em;
   background-color: white;
   border-radius: 50em;
-  border: 10px double #61beb1;
-  display: flex;
+  border: 30px double #f2bf6b;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-right: 8em;
 }
 
@@ -75,13 +83,8 @@ THE JUMBOTRON FULL PAGE IMAGE
 }
 
 
-.jumbo-block {
-  background-color: white;
-  color: black;
-  height: 6em;
-}
 
-.flex {
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,31 +92,17 @@ THE JUMBOTRON FULL PAGE IMAGE
   width: 100%;
 }
 
-.jumbo-block p {
-  font-size: 1.3em;
-  margin: 0;
-  padding: 0;
-}
 
-#Guys-location {
-  background-color: black;
-  color: white;
-}
 
 .filler {
   height: 100em;
 }
 
-.socials img {
-  width: 4em;
-  height: auto;
-  margin-left: 1em;
-}
 
 
 .side-menu {
   color: white;
-  background-color:purple;
+  background-color:rgb(242, 191, 107);
   padding: 0.8em;
   margin: 2em 0em 1em 0;
 }
@@ -141,11 +130,6 @@ THE JUMBOTRON FULL PAGE IMAGE
   font-size: 16px;
 }
 
-ul#slider, ul#slider li {
-    width: 300px;
-    height: 200px;
-    list-style: none;
-}
 
 /* SLIDER CSS */
 
@@ -181,6 +165,170 @@ ul#slider, ul#slider li {
   border: 0;
   overflow: hidden;
   }
+
+
+  /* SHACK TEMPLATE */
+  .shack-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  flex-direction: column;
+}
+
+.shack-logo img {
+  width: 35em;
+  margin-top: 2em;
+}
+
+.colour-top, .colour-bottom {
+  height: 12em;
+  width: 100%;
+  background-color: rgb(242, 191, 107);
+  position: absolute;
+    -webkit-transform: skewY(-10deg);
+  -moz-transform: skewY(-10deg);
+  -ms-transform: skewY(-10deg);
+  -o-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+  overflow: none;
+}
+
+
+.colour-top {
+  top: 0;
+  position: absolute;
+  left: -999em;
+   animation: slideRight 2s;
+  -webkit-animation: slideRight 2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@keyframes slideRight
+    {
+      0%   {left: -999em;}
+
+      100%   {left: 0;}
+    }
+
+
+
+.colour-bottom {
+  bottom: 0;
+    position: absolute;
+  right: -999em;
+     animation: slideLeft 2s;
+  -webkit-animation: slideLeft 2s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes slideLeft
+    {
+      0%   {right: -999em;}
+
+      100%   {right: 0;}
+    }
+
+.angled-container {
+        -webkit-transform: skewY(-10deg);
+  -moz-transform: skewY(-10deg);
+  -ms-transform: skewY(-10deg);
+  -o-transform: skewY(-10deg);
+  transform: skewY(-10deg);
+
+}
+
+
+
+.social-strip {
+  font-size:4em;
+  display: flex;
+  -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-animation: fadeIn 5s;
+             animation: fadeIn 5s;
+}
+
+.social-strip i {
+  margin: 0.5em;
+}
+
+.social-strip a{
+    color: rgb(242, 191, 107);
+  text-decoration: none;
+   animation: colorchangereverse 15s;
+  -webkit-animation: colorchangereverse 15s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+
+@keyframes fadeIn
+    {
+      0%   {opacity: 0;}
+      25%   {opacity: 0;}
+      50%  {opacity: 0.5;}
+      75%  {opacity: 0.75;}
+      100%   {opacity: 1;}
+    }
+
+
+.rslides {
+margin: 1em 0;
+}
+
+
+
+.event-scroll, .venue-gallery {
+height: 30em;
+margin-top: 1em;
+}
+
+.event-scroll {
+  background-color: teal;
+  margin-right: 1em;
+}
+
+.venue-gallery {
+  background-image: url(../images/bar.jpeg);
+  background-size: cover;
+  max-width: 65%;
+}
+
+@media only screen and (max-width: 480px){
+    .shack-logo img {
+    width: 18em;
+  }
+
+  .colour-top, .colour-bottom{
+    height: 7em;
+  }
+  .social-strip {
+  font-size: 3em;
+  }
+
+  #countDownVault {
+    margin: 0;
+    display: inline-block;
+    font-size: 0.5em;
+  }
+
+}
+
 
 
 @media only screen and (max-width: 480px){
