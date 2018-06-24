@@ -133,10 +133,7 @@ a.dc-button:hover {
   font-size: 1.3em;
 }
 
-.container-center {
-  display: flex;
-  justify-content: center;
-}
+
 
 
 
@@ -181,8 +178,8 @@ a.dc-button:hover {
   }
 
 
-  /* SHACK TEMPLATE */
-  .shack-container {
+  /* SIDE VENUE INFO AREA */
+  .venue-container {
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -190,7 +187,7 @@ a.dc-button:hover {
   flex-direction: column;
 }
 
-.shack-logo img {
+.venue-logo img {
   width: 32em;
   margin-top: 2em;
 }
@@ -362,7 +359,6 @@ margin-top: 1em;
   width: 100%;
   margin: 1em 0;
   background-color: #eee;
-
 }
 
 
@@ -422,7 +418,6 @@ margin-top: 1em;
 }
 
 
-
 .content-description p {
   padding: 1.2em;
   margin: 0;
@@ -433,9 +428,19 @@ margin-top: 1em;
 
 /*MEDIA QUERIES */
 
-@media only screen and (min-width: 2000px){
- .shack-logo img {
+@media only screen and (min-width: 1800px){
+ .venue-logo img {
     width: 45em;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+ .venue-logo img {
+    width: 28em;
+  }
+
+  .colour-top, .colour-bottom{
+    height: 9em;
   }
 }
 
@@ -468,7 +473,7 @@ margin-top: 1em;
 
 
 @media only screen and (max-width: 480px){
-  .shack-logo img {
+  .venue-logo img {
   width: 22em;
 }
 
@@ -495,8 +500,5 @@ font-size: 3em;
 @media only screen and (max-width: 330px){
    .shack-logo img {
     width: 14em;
-  }
-    #countDownVault {
-      font-size: 0.34em;
   }
 }
